@@ -4,7 +4,7 @@ import sys
 from PyQt5.QtWidgets import QWidget,QApplication,QVBoxLayout,QHBoxLayout,QPushButton,QLineEdit,QLabel
 
 
-# os.system("pip3 install pyshorteners")
+os.system("pip3 install pyshorteners")
 
 class Window(QWidget):
     def __init__(self):
@@ -62,20 +62,4 @@ app = QApplication(sys.argv)
 window = Window()
 sys.exit(app.exec_())
 
-
-
-
-
-
-
-
-"""
-url = input("URL (type exit to exit) :  ")
-if url == "exit":
-    print("Goodbye ! ")
-    break
-
-else:
-    s = pyshorteners.Shortener().tinyurl.short(url)
-    print("Shortened : ", s)
-"""		
+	
